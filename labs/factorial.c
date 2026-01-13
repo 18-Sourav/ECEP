@@ -1,16 +1,21 @@
 #include<stdio.h>
-
-int main()
+int factorial(int n)
 {
-    int n,fact=1;
-
-    scanf("%d",&n);
-
+    int fact=1;
     for(int i=1;i<=n;i++)
     {
         fact=fact*i;
     }
+    return fact;
+}
 
-    printf("%d\n",fact);
+int main()
+{
+    int n;
+
+    scanf("%d",&n);
+
+    printf("%d\n",factorial(n));
     return 0;
+    
 }

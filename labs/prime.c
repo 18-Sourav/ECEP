@@ -1,9 +1,6 @@
 #include<stdio.h>
-
-int main()
+int prime(int n)
 {
-    int n;
-    scanf("%d",&n);
     int flag=1;
     for(int i=2;i<=n/2;i++)
     {
@@ -13,11 +10,19 @@ int main()
             break;
         }   
     }
-    printf("%d\n",flag);
-    if(flag==1)
-        printf("The entered number is a prime number");
+    return flag;
+}
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+   
+    int res=prime(n);
+    if(res==1)
+        printf("The entered number is a prime number\n");
     else 
-        printf("The entered number is not a prime number");
+        printf("The entered number is not a prime number\n");
 
     return 0;
 }
