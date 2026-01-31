@@ -1,6 +1,4 @@
 #include<stdio.h>
-//#include<ctype.h>
-
 
 int isalnum1(char ch)
 {
@@ -8,8 +6,8 @@ int isalnum1(char ch)
         return 1;
     else
         return 0;    
-}
-
+} 
+ 
 int main()
 {
     char ch;

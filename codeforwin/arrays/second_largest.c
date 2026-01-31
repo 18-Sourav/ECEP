@@ -1,6 +1,32 @@
 #include<stdio.h>
-#include<limits.h>
 
+int sec_largest(int arr[],int n)
+{
+    for(int i=0;i<size;i++)
+    {
+        int lar= arr[0];
+        int lar2;
+        if(arr[i]<lar)
+        {
+            lar2=arr[i];
+            break;
+        }
+        if(i==size-1)   
+            printf("There is no Second largest element in the array\n");
+    }   
+     
+     for(int i=0;i<n;i++)
+     {
+        if(arr[i]>lar)
+        {
+            lar2=lar;
+            lar=arr[i];
+        }
+        else if(arr[i]>lar2 && arr[i]<lar)
+            lar2=arr[i];
+     }
+     return lar2;
+}
 int main()
 {
     int n;
@@ -9,19 +35,7 @@ int main()
     for(int i=0;i<n;i++)
          scanf("%d",&arr[i]);
     
-     int lar2= INT_MIN;
-     int lar= INT_MIN;
-     
-     for(int i=0;i<n;i++)
-     {
-        if(arr[i]>lar){
-            lar2=lar;
-            lar=arr[i];
-        }
-        else if(arr[i]>lar2 && arr[i]<lar)
-            lar2=arr[i];
-     }
-     printf("%d\n",lar2);
-     //printf("\n%d",lar);
+     printf("The second largest element is %d\n",sec_largest(arr,n));
+
      return 0;
 }

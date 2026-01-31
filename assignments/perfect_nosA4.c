@@ -7,7 +7,7 @@ int main()
     scanf("%d",&n);
     num=n;
 
-    for (int i=1;i<=n;i++)
+    for (int i=1;i<=n/2;i++)
     {
         res=n%i;
         if(res==0)

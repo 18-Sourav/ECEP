@@ -6,11 +6,10 @@ int prime(int n)
     {
         if((n%i)==0)
         {
-            flag=0;
-            break;
+            return 0;
         }   
     }
-    return flag;
+    return 1;
 }
 
 int main()

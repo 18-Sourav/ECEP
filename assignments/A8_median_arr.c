@@ -35,7 +35,7 @@ int main()
         if(flag1==0)
             break;
      }   
-     // sortinng the second array
+     // sorting the second array
 
     int temp2=0,flag2=0;
      for(int i=0;i<size2-1;i++)
