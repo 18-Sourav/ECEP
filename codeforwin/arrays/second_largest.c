@@ -11,8 +11,10 @@ int sec_largest(int arr[],int n)
             lar2=arr[i];
             break;
         }
-        if(i==size-1)   
+        if(i==size-1) {
             printf("There is no Second largest element in the array\n");
+            return 0;
+        }
     }   
      
      for(int i=0;i<n;i++)
