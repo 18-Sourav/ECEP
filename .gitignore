@@ -1,1 +1,25 @@
-**/a.out
+# Compiled object files
+*.o
+*.out
+*.exe
+
+# C/C++ compiled binaries
+a.out
+
+# Debug files
+*.gdb
+*.dSYM/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# VS Code settings
+.vscode/
+
+# Build directories
+build/
+bin/**/a.out
