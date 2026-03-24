@@ -5,15 +5,15 @@ int main()
     FILE *fp,*fporg;
 
     fporg=fopen("text.txt","r");
-    fp=fopen("text.txt","a+");
+    fp=fopen("text_copy.txt","w");
     if(fporg==NULL)
     {
         printf("Error: Failure in opening the file\n");
         return 0;
     }
-    printf("Info: File opened\n");
+   // printf("Info: File opened\n");
     char ch;
-    //while((ch=fgetc(fp))!=EOF)
+   
     while((ch=fgetc(fporg)))
     {
         if(feof(fporg))
@@ -22,9 +22,11 @@ int main()
             break;
         }
         fputc(ch,fp);
-        //printf("%c",ch);
+       
     }
+   
     fclose(fporg);
+    fclose(fp);
 
     return 0;
 
