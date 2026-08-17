@@ -5,8 +5,10 @@ int x=10;
 
 struct student
 {
+    char c1,c2;
+    short s;
     int id;
-    char name[50];
+    //char name[50];
 };
 void value ( struct student *s)
 {
@@ -17,7 +19,8 @@ void  main()
 {
     struct student s1;
     struct student *sptr =&s1;
+
     value(&s1);
-    printf("Structure 1 has name = %s, ",s1.name);
-    printf("id = %d, ",sptr->id);
+    printf("Structure 1 has name = %u, ",sizeof(s1));
+    //printf("id = %d, ",sptr->id);
 }
